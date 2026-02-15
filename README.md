@@ -87,7 +87,7 @@ The ANN model includes:
 ### Using the Web Application
 
 ```bash
-streamlit run app.py
+streamlit run regression_app.py
 ```
 
 The web app provides:
@@ -120,7 +120,7 @@ The model has been trained with comprehensive logging of training and validation
 To visualize the training loss and accuracy graphs interactively, run TensorBoard:
 
 ```bash
-tensorboard --logdir=logs/
+tensorboard --logdir=regressionlogs/fit/
 ```
 
 Then open **`http://localhost:6006`** in your browser.
@@ -137,8 +137,8 @@ The project includes multiple training runs logged in separate directories:
 
 | Run | Directory | Purpose |
 |-----|-----------|---------|
-| Run 1 | `logs/fit20260214-152207/` | Initial model training |
-| Run 2 | `logs/fit20260214-193201/` | Model refinement & tuning |
+| Run 1 | `regressionlogs/fit/20260214-152207/` | Initial model training |
+| Run 2 | `regressionlogs/fit/20260214-193201/` | Model refinement & tuning |
 
 You can compare multiple training runs in TensorBoard by loading all logs at once:
 
